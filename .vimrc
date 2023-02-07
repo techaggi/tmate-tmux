@@ -22,6 +22,9 @@ set shiftwidth=4
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
 
+vnoremap  <C-c> "+y
+map <C-v> "+p
+
 " remap split navigation to just control
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
