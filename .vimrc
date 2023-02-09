@@ -6,7 +6,9 @@ set clipboard=unnamedplus
 set splitbelow splitright
 set noswapfile 
 set hlsearch 
-set incsearch 
+set incsearch
+let mapleader=","
+
 
 cabbrev Q q!
 
