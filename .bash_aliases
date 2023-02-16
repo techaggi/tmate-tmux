@@ -8,6 +8,8 @@ alias more='cat | more < '
 alias lia='ls -liart'
 alias ll='ls -l'
 alias ss='ss --listening --tcp' 
+alias tf='sudo tail -n250 -f /var/log/syslog'   
+
 
 # alias his='history | awk '\''length(\$0) >= 17'\'' > $(hostname)_$(date +"%Y%m%d_%H%M%S").txt'
 # alias his='history | awk 'length($0) >= 17' > $(hostname)$(date +"%Y%m%d%H%M%S").txt'
