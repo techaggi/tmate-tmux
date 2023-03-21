@@ -1,0 +1,6 @@
+[Unit]
+Description=Set keycodes for keyboard
+[Service]
+ExecStart=/etc/systemd/system/setkeycodes.sh
+[Install]
+WantedBy=multi-user.target
