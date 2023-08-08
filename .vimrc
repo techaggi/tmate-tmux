@@ -9,6 +9,7 @@ set hlsearch
 set incsearch
 let mapleader=","
 
+set guifont=Consolas:h14
 
 cabbrev Q q!
 
