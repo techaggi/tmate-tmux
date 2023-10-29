@@ -34,6 +34,12 @@ nmap oo o<Esc>k
 nmap OO O<Esc>k
 
 
+" replace space mit unterstrich im selektierten bereich
+noremap <leader>- :s/\%V /_/g
+" replace ende mit 2x space im ganzen file
+noremap <leader>4 :%s/$/  /
+
+
 " remap split navigation to just control
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
