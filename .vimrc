@@ -28,6 +28,12 @@ autocmd InsertLeave * set nocul
 vnoremap  <C-c> "+y
 map <C-v> "+p
 
+" insert new line without edit mode
+
+nmap oo o<Esc>k
+nmap OO O<Esc>k
+
+
 " remap split navigation to just control
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
