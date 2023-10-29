@@ -30,8 +30,8 @@ map <C-v> "+p
 
 " insert new line without edit mode
 
-nmap oo o<Esc>k
-nmap OO O<Esc>k
+nmap oo o<Esc>
+nmap OO O<Esc>
 
 
 " replace space mit unterstrich im selektierten bereich
