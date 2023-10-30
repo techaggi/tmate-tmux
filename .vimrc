@@ -7,7 +7,8 @@ set splitbelow splitright
 set noswapfile 
 set hlsearch 
 set incsearch
-let mapleader=","
+let mapleader = " "
+
 
 set guifont=Consolas:h14
 
