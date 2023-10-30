@@ -1,0 +1,80 @@
+set relativenumber
+set ignorecase
+syntax on 
+colorscheme pablo
+set clipboard=unnamedplus
+set splitbelow splitright
+set noswapfile 
+set hlsearch 
+set incsearch
+let mapleader= " "
+set ruler
+set showmode
+
+set guifont=Consolas:h14
+
+
+cabbrev Q q!
+
+inoremap jj <ESC>
+
+"set tab and shiftkey
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+"optisch insert mode erkennen
+ 
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+
+vnoremap  <C-c> "+y
+map <C-v> "+p
+
+" remap split navigation to just control
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+" make adjusting split size more user friendly
+
+
+noremap <silent> <C-left> :vertical resize +3<CR>
+noremap <silent> <C-right> :vertical resize -3<CR>
+noremap <silent> <C-up> :resize +3<CR>
+noremap <silent> <C-down> :resize -3<CR>
+
+nmap oo o<Esc>
+nmap OO O<Esc>
+
+inoremap ll <Right>
+
+" replace space mit unterstrich im selektierten bereich
+noremap <leader>- :s/\%V /_/g
+" replace ende mit 2x space im ganzen file
+noremap <leader>4 :%s/$/  /
+
+call plug#begin('C:\Users\haggi\vimfiles\plugged')
+
+Plug 'https://github.com/vim-airline/vim-airline' 
+Plug 'http://github.com/tpope/vim-surround' 
+Plug 'https://github.com/preservim/nerdtree' 
+Plug 'https://github.com/tpope/vim-commentary' 
+Plug 'vimwiki/vimwiki'
+Plug 'https://github.com/jiangmiao/auto-pairs'
+"Plug 'SirVer/ultisnips'
+
+set encoding=UTF-8
+
+call plug#end()
+
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+
+" Enable UltiSnips
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
