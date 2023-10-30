@@ -40,6 +40,7 @@ noremap <leader>- :s/\%V /_/g
 " replace ende mit 2x space im ganzen file
 noremap <leader>4 :%s/$/  /
 
+inoremap ll <Right>
 
 " remap split navigation to just control
 noremap <C-h> <C-w>h
