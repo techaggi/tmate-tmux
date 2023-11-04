@@ -33,6 +33,8 @@ map <C-v> "+p
 
 nmap oo o<Esc>
 nmap OO O<Esc>
+nnoremap ZQ ZU
+
 
 
 " replace space mit unterstrich im selektierten bereich
