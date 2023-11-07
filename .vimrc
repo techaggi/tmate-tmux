@@ -1,7 +1,7 @@
 set relativenumber
 set ignorecase
 syntax on 
-colorscheme monokai
+colorscheme elflord
 set clipboard=unnamedplus
 set splitbelow splitright
 set noswapfile 
